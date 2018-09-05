@@ -10,7 +10,7 @@ Goals:
 
 ## Connecting to spark cluster 
 
-Error:
+**Error:**
 
 ```
 aws: error: Cluster terminating or already terminated.
@@ -28,19 +28,7 @@ aws emr ssh --cluster-id j-3QMMKQMFBB21Y --key-pair-file ~/spark-clusters.pem
 
 ## Installing anaconda with 'Bootstrap Actions'
 
-**Error #1:**
-
-```
-ImportError: No module named 'sklearn'
-```
-
-~~Seems simple enough to fix: `pip install spark-sklearn`~~
-
-~~However, pip is still defaulted to python2, so we have to reference pip-3.4.  Also, we have to do this with sudo or we get permission errors.~~
-
-`sudo pip-3.4 install spark-sklearn`
-
-**Error #2:**
+**Error**
 
 ```
 ImportError: No module named 'scipy'
